@@ -15,6 +15,35 @@
 
 ![pilelayout](https://github.com/LineChen/PileLayout/blob/master/screenshot/pilelayout.png)
 
+### 使用
+
+- 布局
+
+```java
+    <com.beiing.pilelayout.PileLayout
+        android:id="@+id/pile_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:PileLayout_pileWidth="10dp"/>
+
+```
+
+- 通过addView方式添加child
+
+```java
+
+    public void initPraises() {
+        LayoutInflater inflater = LayoutInflater.from(this);
+        for (int i = 0; i < urls.length; i++) {
+            CircleImageView imageView = (CircleImageView) inflater.inflate(R.layout.item_praise, pileLayout, false);
+            Glide.with(this).load(urls[i]).into(imageView);
+            pileLayout.addView(imageView);
+        }
+
+    }
+
+```
+
 
 #License
 
