@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AbsRoundImageView">
+        <attr name="round_borderWidth" format="dimension|reference"/>
+        <attr name="round_borderColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="leftTopRadius" format="dimension|reference"/>
+        <attr name="rightTopRadius" format="dimension|reference"/>
+        <attr name="rightBottomRadius" format="dimension|reference"/>
+        <attr name="leftBottomRadius" format="dimension|reference"/>
+    </declare-styleable>
+
+</resources>
