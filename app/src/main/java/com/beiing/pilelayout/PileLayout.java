@@ -19,6 +19,9 @@ public class PileLayout extends ViewGroup {
      */
     protected float vertivalSpace;
 
+    /**
+     * 重叠宽度
+     */
     protected float pileWidth;
 
     public PileLayout(Context context) {
